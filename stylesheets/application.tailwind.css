@@ -1,3 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  font-weight: 700;
+}
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]:after {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  content: attr(data-tooltip);
+  padding: 6px 10px;
+  top: 2em;
+  left: 50%;
+  transform: translateX(-50%) translateY(-2px);
+  background: grey;
+  color: white;
+  white-space: nowrap;
+  z-index: 2;
+  border-radius: 2px;
+  /* Note: you'll need to define the $cubic variable, or replace it with a specific cubic-bezier value */
+  transition:
+    opacity 0.2s cubic-bezier(0.64, 0.09, 0.08, 1),
+    transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+}
+
+[data-tooltip]:hover:after {
+  display: block;
+  opacity: 1;
+  border-radius: 1.5rem;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
