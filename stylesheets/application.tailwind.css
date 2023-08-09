@@ -39,7 +39,7 @@ h1 {
   transform: translateX(-50%) translateY(0);
 }
 
-.wave {
+.wave:hover {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   animation-duration: 2.5s; /* Change to speed up or slow down */
   animation-iteration-count: infinite; /* Never stop waving :) */
