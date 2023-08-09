@@ -707,20 +707,48 @@ select{
   margin-right: auto;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
+.mt-20{
+  margin-top: 5rem;
 }
 
 .mt-6{
   margin-top: 1.5rem;
 }
 
+.mt-10{
+  margin-top: 2.5rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
+}
+
 .flex{
   display: flex;
 }
 
+.inline-flex{
+  display: inline-flex;
+}
+
+.h-5{
+  height: 1.25rem;
+}
+
+.w-5{
+  width: 1.25rem;
+}
+
 .max-w-md{
   max-width: 28rem;
+}
+
+.max-w-4xl{
+  max-width: 56rem;
 }
 
 .items-center{
@@ -731,14 +759,44 @@ select{
   justify-content: flex-end;
 }
 
+.justify-between{
+  justify-content: space-between;
+}
+
+.space-x-1 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
 .overflow-hidden{
   overflow: hidden;
+}
+
+.rounded{
+  border-radius: 0.25rem;
+}
+
+.bg-gray-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.bg-rose-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 241 242 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -746,18 +804,42 @@ select{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.p-1{
+  padding: 0.25rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-2\.5{
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
-.pt-8{
-  padding-top: 2rem;
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
 }
 
 .text-4xl{
@@ -765,13 +847,51 @@ select{
   line-height: 2.5rem;
 }
 
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-bold{
   font-weight: 700;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .font-extrabold{
@@ -790,14 +910,12 @@ select{
   font-style: italic;
 }
 
-.text-\[\#ff7115\]{
-  --tw-text-opacity: 1;
-  color: rgb(255 113 21 / var(--tw-text-opacity));
+.leading-7{
+  line-height: 1.75rem;
 }
 
-.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+.tracking-tight{
+  letter-spacing: -0.025em;
 }
 
 .text-gray-500{
@@ -823,6 +941,31 @@ select{
 .text-sky-600{
   --tw-text-opacity: 1;
   color: rgb(2 132 199 / var(--tw-text-opacity));
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-\[\#ff7115\]{
+  --tw-text-opacity: 1;
+  color: rgb(255 113 21 / var(--tw-text-opacity));
+}
+
+.text-violet-500{
+  --tw-text-opacity: 1;
+  color: rgb(139 92 246 / var(--tw-text-opacity));
+}
+
+.text-rose-800{
+  --tw-text-opacity: 1;
+  color: rgb(159 18 57 / var(--tw-text-opacity));
+}
+
+.text-teal-400{
+  --tw-text-opacity: 1;
+  color: rgb(45 212 191 / var(--tw-text-opacity));
 }
 
 .underline-offset-1{
@@ -869,11 +1012,11 @@ h1 {
   text-decoration-line: underline;
 }
 
-@media (min-width: 640px){
-  .sm\:max-w-2xl{
-    max-width: 42rem;
-  }
+.hover\:underline-offset-1:hover{
+  text-underline-offset: 1px;
+}
 
+@media (min-width: 640px){
   .sm\:max-w-3xl{
     max-width: 48rem;
   }
@@ -882,8 +1025,24 @@ h1 {
     max-width: 36rem;
   }
 
+  .sm\:max-w-2xl{
+    max-width: 42rem;
+  }
+
   .sm\:pt-12{
     padding-top: 3rem;
+  }
+
+  .sm\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
