@@ -739,8 +739,20 @@ select{
   margin-top: 2em;
 }
 
+.mt-12{
+  margin-top: 3rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
 .flex{
   display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .aspect-\[9\/10\]{
@@ -749,6 +761,30 @@ select{
 
 .h-full{
   height: 100%;
+}
+
+.h-4\/5{
+  height: 80%;
+}
+
+.h-3\/5{
+  height: 60%;
+}
+
+.h-2\/3{
+  height: 66.666667%;
+}
+
+.h-\[75\%\]{
+  height: 75%;
+}
+
+.h-\[74\%\]{
+  height: 74%;
+}
+
+.h-\[73\%\]{
+  height: 73%;
 }
 
 .w-44{
@@ -776,6 +812,10 @@ select{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .items-center{
   align-items: center;
 }
@@ -790,12 +830,37 @@ select{
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-x-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2rem * var(--tw-space-x-reverse));
+  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
 
 .rounded-xl{
   border-radius: 0.75rem;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
+.border{
+  border-width: 1px;
+}
+
+.border-gray-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .bg-white{
@@ -917,6 +982,11 @@ select{
   color: rgb(139 92 246 / var(--tw-text-opacity));
 }
 
+.text-sky-700{
+  --tw-text-opacity: 1;
+  color: rgb(3 105 161 / var(--tw-text-opacity));
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -961,7 +1031,7 @@ h1 {
   transform: translateX(-50%) translateY(0);
 }
 
-.wave {
+.wave:hover {
   animation-name: wave-animation;
   /* Refers to the name of your @keyframes element below */
   animation-duration: 2.5s;
@@ -1021,9 +1091,19 @@ h1 {
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-sky-900:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 74 110 / var(--tw-bg-opacity));
+}
+
 .hover\:px-2:hover{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.hover\:px-1:hover{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .hover\:text-slate-100:hover{
@@ -1085,6 +1165,11 @@ h1 {
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
